@@ -1,6 +1,6 @@
 <?php
     session_start();
-    $conn = mysqli_connect('localhost', 'root', '', 'db_user');
+    $conn = mysqli_connect('b592eitzjv9zi3idwg87-mysql.services.clever-cloud.com', 'uggnqcbf2x413ynz', 'QwH4hFb9EULgOCggS7sn', 'b592eitzjv9zi3idwg87');
     $query = 'SELECT *, c.Name as countryName FROM user u JOIN country c ON u.country = c.Id';
     $result = mysqli_query($conn, $query);
 ?>
